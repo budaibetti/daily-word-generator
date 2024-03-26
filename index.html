@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content=" width=device-width",
+    initial-scale = "1.0">
+    <title>Today's word</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+  <div class="title">
+      <ul>
+        <li class="title-en">Word of the day</li>
+        <li class="title-it">Parola del giorno</li>
+        <li class="title-hu">Napi szó</li>
+      </ul> 
+      
+    </div>
+    
+<div class="main-container">
+    <div class="favourite-container" id ="fav-container">
+      <i class="fa-solid fa-book-bookmark"></i>
+      Favourite words: <span id="fav-words-numb"></span>
+    </div>
+
+    <div class="main-word-container" id="main-word-container">
+      <h2 id="main-word"> </h2>
+        <button id="fav-btn" class="fav-btn"><i class="fas fa-heart"></i> </button>
+      </div>
+        <div class="explanation-container">
+          <div class="first-language">
+        <button id= "it-lang"class="language-button">
+          <i class="fa-solid fa-pizza-slice"></i>
+        <span>
+          Italian
+        </span> 
+        </button>
+        <div id="itDropdown" class="dropdown-content">
+          <ul>
+            <li id="word-meaning-it"></li>
+            <li id="word-example-it"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="second-language">
+        <button id="en-lang" class="language-button">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span>
+            English
+          </span>
+          
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <ul>
+            <li id="word-meaning-en"></li>
+            <li id="word-example-en"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="third-language">
+        <button class="language-button">
+          <i class="fa-solid fa-pepper-hot"></i>
+          <span>
+            Hungarian
+          </span>
+          
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <ul>
+            <li id="word-meaning-hu"></li>
+            <li id="word-example-hu"></li>
+          </ul>
+        </div>
+      </div>
+</div>
+
+<div class="next-word">
+  <div class="next-w-title">
+    Parola successiva/Next word/Következő szó
+  </div>
+  <div class="countdown-container">
+   
+
+    <div class="countdown-el hours-c">
+      <p class="big-text" id="hours" > 0</p>
+      <span> hours </span>
+      </div>
+
+    <div class="countdown-el minutes-c">
+       <p class="big-text" id="minutes" > 0</p>
+      <span> minutes </span>
+      </div>
+
+    <div class="countdown-el seconds-c">
+      <p class="big-text" id="seconds" > 0</p>
+      <span> seconds </span>
+      </div>
+</div>
+
+</div>
+
+<div  class="popup-container hidden" id="word-popup">
+  <div class="popup" id="popup">
+    <button id="close-popup" class="close-popup"><i class="fas fa-times"></i></button>
+    
+    <div class="word-info" id="word-info">
+      
+  </div>
+</div>
+    </div>
+  </div>
+  </body>
+</html>
